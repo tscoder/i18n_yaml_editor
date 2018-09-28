@@ -32,7 +32,7 @@ module I18nYamlEditor
       store.create_missing_keys
 
       $stdout.puts " * Starting I18n Yaml Editor at port #{@port}"
-      Rack::Server.start app: Web, Port: @port
+      Rack::Server.start app: Web, Host: "0.0.0.0", Port: @port
     end
 
     # Loads translations from a given path
