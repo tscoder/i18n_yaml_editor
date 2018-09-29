@@ -70,11 +70,18 @@
       }
 
       table.keys .key {
-        padding-left: 0.5em;
+        /* padding-left: 0.5em; */
+        padding-bottom: 2em;
       }
 
       table.keys tr.translation > td {
         border-bottom: 1px solid #bbb;
+      }
+
+      
+      table.keys tr.translation .key .text {
+        font-weight: bolder;
+        font-size: large;
       }
 
       table.keys tr.translation.incomplete .key .text {
@@ -89,8 +96,13 @@
         width: 300px;
       }
 
+      table.locales td.locale {
+        width: 3.2em;
+      }
+
       table.locales td.value input {
-        width: 600px;
+        width: 100%;
+        font-size: larger;
       }
 
       table.locales td.value input[type=radio] {
@@ -99,6 +111,11 @@
 
       table.locales td.value label {
         margin-right: 20px;
+      }
+
+      table.locales {
+        width: 100%;
+        padding: 1em 2em 3em 2em;
       }
 
       /* CATEGORIES */
